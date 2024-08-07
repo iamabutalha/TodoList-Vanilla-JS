@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-input-grid, .todo-grid {
+    display: grid;
+    grid-template-columns: 200px 150px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.todo-input-grid {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name-input, .due-date-input,.time-input {
+    font-size: 15px;
+    padding: 6px;
+}
+
+.add-todo-button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.add-todo-button:hover {
+    background-color: rgb(221, 220, 220);
+    color: black;
+}
+
+.delete-todo-button {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.delete-todo-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.clear-storage{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 9px;
+    margin-left: 180px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: background-color 0.15s, color 0.15s;
+
+}
+
+.clear-storage:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.error-message {
+    color: red;
+}
+
+.todo-alert {
+    color: rgb(102, 102, 1);
+   
+}
