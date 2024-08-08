@@ -103,6 +103,10 @@ function saveToStorage() {
 
 function clearStorage() {
   localStorage.clear();
+  todoList.length = 0;
   document.querySelector(".todo-grid").innerHTML = "";
+  document.querySelector(
+    ".no-todo-message"
+  ).innerHTML = `<h3 class="todo-alert">No Todo's</h3>`;
   saveToStorage();
 }
